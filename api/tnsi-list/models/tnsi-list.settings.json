@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tnsi_lists",
+  "info": {
+    "name": "tnsi_list",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "tnsis": {
+      "via": "tnsi_list",
+      "collection": "tnsi"
+    }
+  }
+}

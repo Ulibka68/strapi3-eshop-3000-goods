@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tnsis",
+      "handler": "tnsi.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tnsis/count",
+      "handler": "tnsi.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tnsis/:id",
+      "handler": "tnsi.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tnsis",
+      "handler": "tnsi.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tnsis/:id",
+      "handler": "tnsi.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tnsis/:id",
+      "handler": "tnsi.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

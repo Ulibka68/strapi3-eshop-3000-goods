@@ -1,0 +1,23 @@
+{
+  "collectionName": "goods_attributes",
+  "info": {
+    "name": "атрибуты товара",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "parm_text": {
+      "type": "string"
+    },
+    "parm_int": {
+      "type": "integer"
+    },
+    "parm_decimal": {
+      "type": "decimal"
+    },
+    "fk_tnsi": {
+      "model": "tnsi"
+    }
+  }
+}

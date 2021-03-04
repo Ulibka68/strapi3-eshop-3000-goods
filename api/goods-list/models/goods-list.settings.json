@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goods_lists",
+  "info": {
+    "name": "goods_list",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "articul": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "remainder": {
+      "type": "integer"
+    },
+    "retail_price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "included_in_set": {
+      "type": "string"
+    },
+    "database_number": {
+      "type": "integer"
+    },
+    "goods_attributes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "goods-attributes.atributy-tovara"
+    }
+  }
+}

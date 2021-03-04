@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tnsi-lists",
+      "handler": "tnsi-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tnsi-lists/count",
+      "handler": "tnsi-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tnsi-lists/:id",
+      "handler": "tnsi-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tnsi-lists",
+      "handler": "tnsi-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tnsi-lists/:id",
+      "handler": "tnsi-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tnsi-lists/:id",
+      "handler": "tnsi-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

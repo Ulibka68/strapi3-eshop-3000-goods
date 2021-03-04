@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/goods-lists",
+      "handler": "goods-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/goods-lists/count",
+      "handler": "goods-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/goods-lists/:id",
+      "handler": "goods-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/goods-lists",
+      "handler": "goods-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/goods-lists/:id",
+      "handler": "goods-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/goods-lists/:id",
+      "handler": "goods-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tnsis",
+  "info": {
+    "name": "tnsi",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "database_number": {
+      "type": "integer"
+    },
+    "tnsi_list": {
+      "model": "tnsi-list",
+      "via": "tnsis"
+    },
+    "tnsis": {
+      "collection": "tnsi",
+      "via": "tnsi"
+    },
+    "tnsi": {
+      "model": "tnsi",
+      "via": "tnsis"
+    },
+    "main_category": {
+      "type": "string"
+    },
+    "parent_category": {
+      "type": "string"
+    }
+  }
+}
